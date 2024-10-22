@@ -8,10 +8,7 @@ public class SumAnalysis
       long startTime, endTime;
 
       System.out.printf("%20s %20s %20s %20s%n", "Num elements", "Algorithm A", "Algorithm B", "Algorithm C");
-      startTime = System.nanoTime();
-      SumIntegers.sum_A(1);
-      endTime = System.nanoTime();
-      System.out.printf("%20s %20s %20s %20s%n", 1, (endTime - startTime));
+      System.out.printf("%20s %20s %20s %20s%n", SumIntegers.sumAExecutionTime(1), SumIntegers.sum_B(1), SumIntegers.sumCExecutionTime(1));
 
 
    }
