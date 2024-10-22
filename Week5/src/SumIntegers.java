@@ -28,6 +28,30 @@ public class SumIntegers
       return sum;
    }
 
+   public static long sumAExecutionTime(int n){
+      long startTime, endTime;
+      startTime = System.nanoTime();
+      sum_A(n);
+      endTime = System.nanoTime();
+      return(endTime - startTime);
+   }
+
+   public static long sumBExecutionTime(int n){
+      long startTime, endTime;
+      startTime = System.nanoTime();
+      sum_B(n);
+      endTime = System.nanoTime();
+      return(endTime - startTime);
+   }
+
+   public static long sumCExecutionTime(int n){
+      long startTime, endTime;
+      startTime = System.nanoTime();
+      sum_C(n);
+      endTime = System.nanoTime();
+      return(endTime - startTime);
+   }
+
    public static void main(String[] args){
       long startTime, endTime;
 
