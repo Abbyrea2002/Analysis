@@ -28,26 +28,11 @@ public class SumIntegers
       return sum;
    }
 
-   public static long sumAExecutionTime(int n){
-      long startTime, endTime;
-      startTime = System.nanoTime();
-      sum_A(n);
-      endTime = System.nanoTime();
-      return(endTime - startTime);
-   }
 
-   public static long sumBExecutionTime(int n){
+   public static long measureExecutionTime(Runnable algorithm){
       long startTime, endTime;
       startTime = System.nanoTime();
-      sum_B(n);
-      endTime = System.nanoTime();
-      return(endTime - startTime);
-   }
-
-   public static long sumCExecutionTime(int n){
-      long startTime, endTime;
-      startTime = System.nanoTime();
-      sum_C(n);
+      algorithm.run();
       endTime = System.nanoTime();
       return(endTime - startTime);
    }
